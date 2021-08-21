@@ -1,5 +1,5 @@
 package Interfaces;
-
+import Classes.Pessoa;
 import Classes.Conta;
 
 public interface IContas {
@@ -8,8 +8,10 @@ public interface IContas {
 	
 	void depositar(double valor);	
 
-	void transferir(double valor, Conta contaDestino);
+	void transferir(double valor, Conta contaDestino, Pessoa nome);
 	
 	void imprimirExtrato();
+	
+	void imprimirDadosConta();
 	
 }
